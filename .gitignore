@@ -1,0 +1,13 @@
+# 忽略所有 .log 文件
+*.log
+
+# 忽略 /doc 目录下的所有 .txt 文件
+/doc/*.txt
+
+# 忽略 /build 目录
+/build/
+
+# 忽略过程文件
+*.pbtxt
+*.pb
+*.txt

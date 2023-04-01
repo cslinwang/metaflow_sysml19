@@ -1,0 +1,42 @@
+DnnModel(1) alpha(1.0100)
+Create SqueezeNet graph with complex bypass.
+Baseline Graph:
+    End-to-end runtime = 0.9507ms
+    Estimated runtime = 1.1772 ms
+    Floating point operations = 0.6364 Gflop
+    Memory accesses = 62.0473 MB
+    GPU kernel launches = 50
+Optimized Graph:
+    End-to-end runtime = 0.8589ms
+    Estimated runtime = 0.9563 ms
+    Floating point operations = 0.9725 Gflop
+    Memory accesses = 47.7680 MB
+    GPU kernel launches = 43
+in-edge: opGuid(102) idx(0) weight(4)
+in-edge: opGuid(103) idx(0) weight(4)
+in-edge: opGuid(104) idx(0) weight(2)
+in-edge: opGuid(105) idx(0) weight(2)
+in-edge: opGuid(109) idx(0) weight(4)
+in-edge: opGuid(110) idx(0) weight(2)
+in-edge: opGuid(111) idx(0) weight(2)
+in-edge: opGuid(113) idx(0) weight(4)
+in-edge: opGuid(114) idx(0) weight(4)
+in-edge: opGuid(115) idx(0) weight(2)
+in-edge: opGuid(116) idx(0) weight(2)
+in-edge: opGuid(121) idx(0) weight(4)
+in-edge: opGuid(122) idx(0) weight(2)
+in-edge: opGuid(123) idx(0) weight(2)
+in-edge: opGuid(125) idx(0) weight(4)
+in-edge: opGuid(126) idx(0) weight(4)
+in-edge: opGuid(127) idx(0) weight(2)
+in-edge: opGuid(128) idx(0) weight(2)
+in-edge: opGuid(132) idx(0) weight(4)
+in-edge: opGuid(133) idx(0) weight(2)
+in-edge: opGuid(134) idx(0) weight(2)
+in-edge: opGuid(136) idx(0) weight(4)
+in-edge: opGuid(137) idx(0) weight(4)
+in-edge: opGuid(138) idx(0) weight(2)
+in-edge: opGuid(139) idx(0) weight(2)
+in-edge: opGuid(144) idx(0) weight(4)
+in-edge: opGuid(145) idx(0) weight(2)
+in-edge: opGuid(146) idx(0) weight(2)

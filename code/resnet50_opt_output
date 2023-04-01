@@ -1,0 +1,16 @@
+DnnModel(4) alpha(1.0100)
+Baseline Graph:
+    End-to-end runtime = 2.2109ms
+    Estimated runtime = 2.4123 ms
+    Floating point operations = 0.5193 Gflop
+    Memory accesses = 37.1956 MB
+    GPU kernel launches = 70
+Optimized Graph:
+    End-to-end runtime = 2.1724ms
+    Estimated runtime = 2.3702 ms
+    Floating point operations = 0.5193 Gflop
+    Memory accesses = 35.8479 MB
+    GPU kernel launches = 67
+in-edge: opGuid(114) idx(0) weight(4)
+in-edge: opGuid(131) idx(0) weight(4)
+in-edge: opGuid(156) idx(0) weight(4)

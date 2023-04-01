@@ -212,7 +212,13 @@ def parse_operator(line1, line2, line3, line4, operator_map, graph_outputs):
     print("Found unknown opcode")
     assert(0)
 
-
+# /**
+# --xla：布尔值参数，用于指示是否使用 TensorFlow XLA 优化。
+# --graph_file：字符串参数，指定从中加载图的文件。
+# --print_tensorboard：字符串参数，指定输出 TensorBoard 信息的文件夹。
+# --iterations：整数参数，指定计时时要平均多少次迭代（默认为 5000）。
+# --discard_iter：整数参数，指定在预热期间要舍弃多少次迭代的时间信息（默认为 1000）。
+# **/
 parser = argparse.ArgumentParser()
 parser.add_argument("--xla", help="Whether to run with TensorFlowXLA optimizations", action="store_true")
 parser.add_argument("--graph_file", help="The file from which to load the graph")
@@ -223,6 +229,8 @@ args = parser.parse_args()
 
 input_shape = []
 graph_outputs = set()
+
+
 
 with open(args.graph_file, 'r') as graph_file:
   # The graph nodes are repesented by 4 lines
@@ -263,6 +271,8 @@ for output in recent_outputs:
 output_nodes = []
 for graph_output in graph_outputs:
   output_nodes.append(operator_map[graph_output])
+
+
 
 config = tf.ConfigProto()
 if (args.xla):
